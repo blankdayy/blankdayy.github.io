@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(238, 238, 238);
+  }
+  
+.border {
+    border-style: hidden; 
+    border-radius: 3px; 
+    border-width: 30px 30px 30px 30px;
+}
