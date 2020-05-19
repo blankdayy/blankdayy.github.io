@@ -7,3 +7,12 @@ body {
     border-radius: 3px; 
     border-width: 30px 30px 30px 30px;
 }
+.text {
+    color: steelblue;
+    text-align: left;
+    text-indent: 10ch;
+    word-spacing: 2mm;
+    text-shadow: 3px 3px;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+}
