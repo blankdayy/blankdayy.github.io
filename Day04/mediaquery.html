@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            text-align: center;
+        }
+        
+        .container{
+            display: grid;
+            margin: 50px auto;
+            grid-template-columns: repeat(3, auto);
+            grid-row-gap: 50px;
+            grid-column-gap: 50px;
+            
+        }
+        
+        .img{
+            display: grid;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .box{
+            display: grid;
+            padding: 15px;
+            text-align: center;
+            background-color: red;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 320px) {
+            .box{
+                grid-template-columns: auto;
+            } }
+        
+        
+        @media only screen and (max-width: 350px) and (min-width: 801px) {
+            .box{
+                grid-template-columns: 2,auto;
+            }
+        }
+            
+
+        @media only screen and (min-width: 800px) {
+            .box{
+                grid-template-columns: 3,auto;
+            }
+        }
+       
+    </style>
+</head>
+
+<body>
+<div>  <img src="https://www.vitamaker.co.th/wp-content/uploads/2017/10/pic-6.jpg" alt="road"></div>
+   
+<div class="container">
+
+        <div class="box"> <h3>title1</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, distinctio.</p></div>
+        <div class="box"> <h3>title1</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, distinctio.</p></div>
+        <div class="box"> <h3>title1</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, distinctio.</p></div>
+        <div class="box"> <h3>title1</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, distinctio.</p></div>
+        <div class="box"> <h3>title1</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, distinctio.</p></div>
+        <div class="box"> <h3>title1</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, distinctio.</p></div>
+        <div class="box"> <h3>title1</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, distinctio.</p></div>
+        <div class="box"> <h3>title1</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, distinctio.</p></div>
+
+</div>    
+</body>
+</html>
