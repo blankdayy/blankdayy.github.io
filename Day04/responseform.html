@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การสร้างresponsive page form</title>
+    <style>
+        .submitbut {
+            background-color: tomato;
+            font-size: 30px;
+            margin-top: 12px;
+            padding: 5px 60px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <fieldset>
+        <legend>
+            Contact us today
+        </legend>    
+        <form action="/action_page.php">
+            <p>Your Name [required]</p>
+            <input name="your name" type="text" placeholder="Name">
+
+            <p>Your Email [required]</p>
+            <input name="your email" type="text" placeholder="Email">
+
+            <p>Subject</p>
+            <input name="subject" type="text">
+            
+            <p>Your Message</p>
+            <textarea rows="15" cols="50"></textarea>
+
+            <input type="submit" value="Send" class="submitbut">
+        </form>
+    </fieldset>    
+</div>
+
+</body>
+</html>
