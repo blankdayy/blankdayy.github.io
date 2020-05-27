@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">"
+
     <style>
-        
+
         .container {
             display: grid;
             margin: 50px auto;
@@ -15,17 +17,88 @@
         }    
 
         .item1 {
-            animation-name: "example";
+            font-size: 70pt;
+            font-stretch: extra-expanded;
+            animation-name: example;
             animation-duration: 4s;
-            width: 200px;
+            width: 15px;
             height: 200px;
+            background-color: cornflowerblue;
+            animation-iteration-count: infinite;
+        }
+
+        .item2 {
+            font-stretch: extra-expanded;
+            animation-name: example;
+            animation-duration: 4s;
+            width: 15px;
+            height: 200px;
+            background-color: cornflowerblue;
+            animation-iteration-count: infinite;
+        }
+
+        .item3 {
+            font-stretch: extra-expanded;
+            animation-name: example;
+            animation-duration: 4s;
+            width: 15px;
+            height: 200px;
+            background-color: pink;
+            animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        }
+
+        .item4 {
+            font-stretch: extra-expanded;
+            animation-name: example1;
+            animation-duration: 4s;
+            width: 15px;
+            height: 200px;
+            background-color:teal;
+            animation-delay: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        .item5 {
+            font-size: 70pt;
+            font-stretch: extra-expanded;
+            animation-name: example1;
+            animation-duration: 4s;
+            width: 15px;
+            height: 200px;
+            background-color:teal;
+            animation-delay: 4s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        .item6 {
+            font-stretch: extra-expanded;
+            animation-name: example1;
+            animation-duration: 4s;
+            width: 15px;
+            height: 200px;
+            background-color:teal;
+            animation-delay: 3s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
         }
 
         @keyframes example {
-             0%{background-color:yellow;}
+             0%{background-color:yellow; color: black; position: relative; left: 150px;}
+             25%{animation-direction: normal;}
+             50%{background-color: black; position: relative; left: 300px;}
+             75%{background-color: blue; color: white;}
+             100%{background-color: red; position: relative; left: 1000px;}
+        
+        }
+
+        @keyframes example1 {
+             0%{background-color:yellow; color: black;}
+             25%{animation-direction: normal;}
              50%{background-color: black;}
-             75%{background-color: blue;}
-             100%{background-color: black;}
+             75%{background-color: blue; color: white;}
+             100%{background-color: red;  position: relative; right: 1000px;}
+        
         }
 
     </style>
@@ -33,17 +106,19 @@
 
 </head>
 <body>
-    <div class="container">
-        <div class="item1"></div>
+<div class="container">
+
+        <div class="item1">I'm black</div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5">I'm White</div>
+        <div class="item6"></div>
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-    </div>
+
+</div>
 
 </body>
 </html>
