@@ -207,7 +207,7 @@ h5 {
 
 @media only screen and (max-width:768px) {
     .container {
-        width: 80%;
+        width: 100%;
         grid-template-columns: 1fr 2fr;
     }
     .sep-line {
@@ -294,6 +294,12 @@ h5 {
     }
     .education-box {
         margin-top: 15px;
+    }
+    .work-box {
+        grid-template-columns: 1fr;
+    }
+    .line-break {
+        visibility: hidden;
     }
 }
 
